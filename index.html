@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        /* Borderni aylanadigan animatsiya */
+        @keyframes rotate-border {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -152,25 +162,28 @@
             Onlayn savdoda <strong class="text-red-600">xavf </strong> → <strong
                 class="text-green-600">ATP bilan 100% ishonch</strong>
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
-            <a href="https://asilbackend.github.io/ATP/demo" class="group relative inline-flex justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold text-sm rounded-full shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-purple-300">
-                <!-- Pulsatsiya effekti (doimiy) -->
-                <span class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 animate-ping"></span>
+        <div class="flex justify-center mt-10">
+            <a href="https://asilbackend.github.io/ATP/demo"
+               class="relative group inline-flex justify-center items-center px-8 py-4 rounded-2xl text-white text-lg font-semibold overflow-hidden">
 
-                <!-- Tugma matni va ikonka -->
-                <span class="relative flex items-center space-x-2 z-10">
-            <i class="fas fa-play-circle text-lg animate-pulse"></i>
-            <span>Demo ni ko‘rish uchun bosing</span>
+                <!-- Animatsion border (infinite) -->
+                <span class="absolute inset-0 rounded-2xl p-[3px] bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 animate-[rotate-border_4s_linear_infinite]"></span>
+
+                <!-- ichki fon -->
+                <span class="relative bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl px-8 py-4 flex items-center gap-3 shadow-xl
+                     transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+
+            <i class="fas fa-play-circle text-xl animate-pulse"></i>
+            <span class="tracking-wide">Demo ni ko‘rish uchun bosing</span>
         </span>
 
-                <!-- Yorqin chiziq effekti (hoverda) -->
-                <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-40 transform -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000"></span>
+                <!-- Shine effekti -->
+                <span class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white to-transparent opacity-0
+                     group-hover:opacity-20 transform -translate-x-[150%] skew-x-12
+                     group-hover:translate-x-[150%] transition-all duration-1000"></span>
             </a>
-            <button disabled
-                    class="bg-gray-200 border-2 border-gray-400 text-gray-500 px-8 py-4 rounded-xl font-bold text-lg cursor-not-allowed flex items-center justify-center">
-                <i class="fab fa-telegram-plane mr-2"></i> Telegram Bot
-            </button>
         </div>
+
     </div>
 </section>
 
