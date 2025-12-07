@@ -139,9 +139,12 @@
 <!-- Hero -->
 <section class="pt-28 pb-20 text-center px-4">
     <div class="max-w-5xl mx-auto">
+
+
         <div class="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 fade-in">
-            <i class="fas fa-shield-alt mr-2"></i> <a href="https://ai500.agrobank.uz/">AI500 Hackathon • 1-bosqich</a>
+            <i class="fas fa-shield-alt mr-2"></i> <a href="https://ai500.agrobank.uz/">AI500 Hackathon</a>
         </div>
+
         <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in gradient-text">
             AI Trustworthiness Passport
         </h1>
@@ -150,9 +153,18 @@
                 class="text-green-600">ATP bilan 100% ishonch</strong>
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
-            <a href="#problem"
-               class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center">
-                <i class="fas fa-play mr-2"></i> Demo Ko‘rish
+            <a href="/demo" class="group relative inline-flex justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold text-sm rounded-full shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-purple-300">
+                <!-- Pulsatsiya effekti (doimiy) -->
+                <span class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 animate-ping"></span>
+
+                <!-- Tugma matni va ikonka -->
+                <span class="relative flex items-center space-x-2 z-10">
+            <i class="fas fa-play-circle text-lg animate-pulse"></i>
+            <span>Demo ni ko‘rish uchun bosing</span>
+        </span>
+
+                <!-- Yorqin chiziq effekti (hoverda) -->
+                <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-40 transform -skew-x-12 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000"></span>
             </a>
             <button disabled
                     class="bg-gray-200 border-2 border-gray-400 text-gray-500 px-8 py-4 rounded-xl font-bold text-lg cursor-not-allowed flex items-center justify-center">

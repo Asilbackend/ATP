@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // /demo → demo.html
+        const path = location.pathname;
+        if (path === '/demo' || path === '/demo/') {
+            location.replace('/demo.html');
+        }
+        // Boshqa sahifalar uchun (masalan, /implementation)
+        else if (path === '/implementation' || path === '/implementation/') {
+            location.replace('/implementation.html');
+        }
+    </script>
+</head>
+<body>
+<p>Yuklanmoqda...</p>
+</body>
+</html>

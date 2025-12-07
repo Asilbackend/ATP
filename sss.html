@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATP – AI Trustworthiness Passport | Qanday Amalga Oshiramiz? – AI500</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .code {
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-100 min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fas fa-passport text-indigo-600 text-2xl"></i>
+                    <span class="font-bold text-xl text-gray-800">ATP</span>
+                </a>
+            </div>
+            <div class="flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">Bosh sahifa</a>
+                <a href="demo.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">Demo</a>
+                <a href="implementation.html" class="text-indigo-600 font-semibold border-b-2 border-indigo-600">Qanday qilamiz?</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="py-16 px-4 text-center">
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            QANDAY AMALGA OSHIRAMIZ?
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <strong>ATP – AI Trustworthiness Passport</strong> loyihasini Python, Java, Data Science va AI jamoasi uchun bosqichma-bosqich texnik reja
+        </p>
+    </div>
+</section>
+
+<!-- 1. Ma'lumot yig'ish -->
+<section class="py-12 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Ma'lumotlarni yig‘ish</h2>
+        </div>
+        <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-xl border border-indigo-200">
+            <p class="text-gray-700 mb-4"><strong>Har bir harakat loglanadi:</strong></p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <li><i class="fas fa-fingerprint text-indigo-600 mr-2"></i> IP manzil</li>
+                <li><i class="fas fa-mobile-alt text-indigo-600 mr-2"></i> Qurilma modeli</li>
+                <li><i class="fas fa-credit-card text-indigo-600 mr-2"></i> Karta (hashlangan)</li>
+                <li><i class="fas fa-wifi text-indigo-600 mr-2"></i> Wi-Fi tarmoq</li>
+                <li><i class="fas fa-map-marker-alt text-indigo-600 mr-2"></i> Geolokatsiya</li>
+                <li><i class="fas fa-clock text-indigo-600 mr-2"></i> Kirish/chiqish vaqti</li>
+            </ul>
+            <div class="mt-6 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python (FastAPI) misoli<br>
+                @app.post("/log")<br>
+                def log_action(user_id, action, ip, device, geo):<br>
+                &nbsp;&nbsp;db.logs.insert({...})
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. Behavior Radar -->
+<section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Behavior Radar (60% Trust Score)</h2>
+        </div>
+
+        <!-- Friend Ring -->
+        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200 mb-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Friend Ring Attack Detection</h3>
+            <p class="text-gray-700">5 ta xaridor faqat 1 sotuvchiga sharh yozsa → <strong>Fake Ring</strong></p>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Java (Spring Boot) + Neo4j<br>
+                MATCH (u:User)-[r:REVIEWED]->(s:Seller)<br>
+                WHERE size((u)-[:SIMILAR_TO]->()) > 3<br>
+                RETURN u, s → BLOCK
+            </div>
+        </div>
+
+        <!-- Self-Purchase -->
+        <div class="bg-gradient-to-r from-red-50 to-rose-50 p-6 rounded-xl border border-red-200 mb-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Self-Purchase Detection</h3>
+            <p class="text-gray-700">Bir xil IP + qurilma + vaqt → <strong>O‘zini sotib olish</strong></p>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python + Scikit-learn<br>
+                from sklearn.ensemble import IsolationForest<br>
+                model = IsolationForest()<br>
+                anomalies = model.predict(new_transaction)
+            </div>
+        </div>
+
+        <!-- Velocity -->
+        <div class="bg-gradient-to-r from-yellow-50 to-amber-50 p-6 rounded-xl border border-yellow-200">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Review Velocity Anomaly</h3>
+            <p class="text-gray-700">1 kunda 5+ sharh → <strong>Bloklanadi</strong></p>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python + Redis<br>
+                reviews_today = redis.incr(f"user:{user_id}:reviews")<br>
+                if reviews_today > 3: block_review()
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Review Weight -->
+<section class="py-12 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Review Weight System</h2>
+        </div>
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
+            <p class="text-gray-700 mb-4"><strong>Fake sharh = 0.05 ball, Halol = 1 ball</strong></p>
+            <table class="w-full text-left text-sm">
+                <tr><td class="py-1"><i class="fas fa-times text-red-600"></i> Yangi hisob</td><td>×0.3</td></tr>
+                <tr><td class="py-1"><i class="fas fa-times text-red-600"></i> Hech sotib olmagan</td><td>×0.2</td></tr>
+                <tr><td class="py-1"><i class="fas fa-times text-red-600"></i> Sharh qisqa</td><td>×0.7</td></tr>
+            </table>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python + Hugging Face<br>
+                from transformers import pipeline<br>
+                classifier = pipeline("sentiment-analysis", model="uzbek-sentiment")<br>
+                weight = calculate_weight(text, user_history)
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Price Check -->
+<section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Price Reality Check</h2>
+        </div>
+        <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-xl border border-teal-200">
+            <p class="text-gray-700">Har 6 soatda OLX, Lalafo, Telegram bozorlardan narx yig‘iladi</p>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python + Scrapy<br>
+                class OlxSpider(scrapy.Spider):<br>
+                &nbsp;&nbsp;def parse(self, response):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;yield {"price": response.css(".price::text").get()}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Trust Score -->
+<section class="py-12 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Trust Score Hisoblash</h2>
+        </div>
+        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-xl border border-indigo-200">
+            <table class="w-full text-center text-lg">
+                <tr class="bg-indigo-600 text-white"><th class="py-3">Komponent</th><th>Vazn</th></tr>
+                <tr><td>Behavior Radar</td><td><strong>60%</strong></td></tr>
+                <tr><td>Price Consistency</td><td>20%</td></tr>
+                <tr><td>Marketplace History</td><td>10%</td></tr>
+                <tr><td>Reviews (weighted)</td><td>10%</td></tr>
+            </table>
+            <div class="mt-4 p-4 bg-gray-900 text-green-400 rounded-lg code text-sm">
+                # Python + XGBoost<br>
+                model = xgb.XGBRegressor()<br>
+                trust_score = model.predict(user_features)[0]
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Texnologik Stack -->
+<section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">6</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">Texnologik Stack</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-python text-4xl text-yellow-500 mb-3"></i>
+                <h3 class="font-bold">Python</h3>
+                <p class="text-sm text-gray-600">FastAPI, Scikit-learn, TensorFlow</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-java text-4xl text-red-600 mb-3"></i>
+                <h3 class="font-bold">Java</h3>
+                <p class="text-sm text-gray-600">Spring Boot, Neo4j</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-database text-4xl text-green-600 mb-3"></i>
+                <h3 class="font-bold">PostgreSQL + MongoDB</h3>
+                <p class="text-sm text-gray-600">Tuzilgan va notuzilgan ma'lumotlar</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-brain text-4xl text-purple-600 mb-3"></i>
+                <h3 class="font-bold">AI / ML</h3>
+                <p class="text-sm text-gray-600">XGBoost, Hugging Face, Isolation Forest</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-spider text-4xl text-orange-600 mb-3"></i>
+                <h3 class="font-bold">Scrapy + Selenium</h3>
+                <p class="text-sm text-gray-600">Narx yig‘ish</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border text-center">
+                <i class="fas fa-server text-4xl text-blue-600 mb-3"></i>
+                <h3 class="font-bold">Render / AWS</h3>
+                <p class="text-sm text-gray-600">Deployment</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. MVP Test -->
+<section class="py-12 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold">7</div>
+            <h2 class="text-3xl font-bold text-gray-800 ml-4">MVP ni sinash</h2>
+        </div>
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
+            <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                <li>100 ta foydalanuvchi, 500 ta tranzaksiya → mock data</li>
+                <li>Python server: <code class="bg-gray-200 px-2 rounded">uvicorn main:app --reload</code></li>
+                <li>5 ta yangi acc → 1 sotuvchiga 5 yulduzli sharh</li>
+                <li>AI: <strong>"Fake Ring Detected"</strong> → sharhlar 0 ball</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 px-4 mt-16">
+    <div class="max-w-5xl mx-auto text-center">
+        <p class="text-sm">
+            © 2025 <strong>ATP – AI Trustworthiness Passport</strong> | AI500 Hackathon 2-bosqich
+        </p>
+        <p class="text-xs text-gray-400 mt-2">
+            <i class="fas fa-users mr-1"></i>
+            Pythonchilar, Javachilar, Data Science va AI jamoasi uchun maxsus
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
